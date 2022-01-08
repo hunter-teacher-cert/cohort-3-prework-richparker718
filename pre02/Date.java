@@ -12,4 +12,4 @@ class Date {
     System.out.println("European format:");
     System.out.println(day + " " + date + " " + month + " " + year);
   }
-}
+  }
