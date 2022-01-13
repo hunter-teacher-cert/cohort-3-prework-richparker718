@@ -18,4 +18,4 @@ zoop - baffle
 baffle - ping
 ping - “ . “
 
-*Since ping is called in baffle, if you invoke baffle at the end of ping it will be recursive and call itself 
+*Since ping is called in baffle, if you invoke baffle at the end of ping it will be recursive and call itself continuously
