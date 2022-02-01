@@ -4,13 +4,13 @@ import java.util.*;
 
 public class Loops{
 
-  public static void power(int x, int n) {
+  public static double power(double x, int n) {
     
-    int base = x;
+    double base = x;
     
     if (n == 0) {
 
-      System.out.println("1");
+      return 1;
 
     } else {
 
@@ -18,11 +18,11 @@ public class Loops{
        x = x * base;
 
       }
-    System.out.println(x);
+      return x;
     }
     }
 
-    public static void factorial(int n) {
+    public static int factorial(int n) {
     
     
     int result = 1;
@@ -31,15 +31,26 @@ public class Loops{
       
        result = n * (i-1);
        n = result;
+       
       }
-      System.out.println(result);
-      
-      } 
+      return result;
+      }
     
-    
+    public static double myexp(double x, double n){
+      double sum = 1;
+      int i = 1;
+      double e = i + x;
+
+      for (i = 1; i <= n; i++){
+        sum = e + Math.pow(x,i)/factorial(i);
+      }
+      return sum;
+    }
+  
 
   public static void main(String[] args){
-      power(3,3);
-      factorial(7);
+      System.out.println(power(3,3));
+      System.out.println(factorial(7));
+      System.out.println(myexp(2,5));
 }
 }
