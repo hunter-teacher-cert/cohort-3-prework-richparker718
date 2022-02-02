@@ -36,21 +36,23 @@ public class Loops{
       return result;
       }
     
-    public static double myexp(double x, double n){
+    public static double myexp(double x, int n){
       double sum = 1;
       int i = 1;
-      double e = i + x;
+      double result = 1;
 
       for (i = 1; i <= n; i++){
-        sum = e + Math.pow(x,i)/factorial(i);
+        result = power(x,i)/factorial(i);
+        sum = result + sum;
+        
       }
       return sum;
     }
   
 
   public static void main(String[] args){
-      System.out.println(power(3,3));
+      System.out.println(power(1.5,3));
       System.out.println(factorial(7));
-      System.out.println(myexp(2,5));
+      System.out.println(myexp(2,6));
 }
 }
