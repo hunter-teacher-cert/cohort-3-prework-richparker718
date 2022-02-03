@@ -71,11 +71,17 @@ public class Loops{
       return sum;
     }
   
+  public static void check(double x){
+    System.out.println(x + "   " + myexp(x,4) + "   " + Math.exp(x));
+
+  }
+
 
   public static void main(String[] args){
       System.out.println(power(1.5,3));
       System.out.println(factorial(7));
       System.out.println(myexp(2,6));
       System.out.println(myexp2(2,6));
+      check(1);
 }
 }
