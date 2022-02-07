@@ -84,7 +84,7 @@ public class Loops{
          check(i);
          i = i * 10;
       }
-      
+
      System.out.println();
 
        double n = -0.1;
@@ -92,6 +92,7 @@ public class Loops{
          System.out.println(myexp2(n,2));
           n = n * 10;
       }
+     // the values are less accurate
 
       System.out.println();
         
