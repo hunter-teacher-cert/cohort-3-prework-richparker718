@@ -5,7 +5,7 @@ import java.util.*;
 public class Array{
 
 
-  public static double[] powArray(double[] a, double b){
+public static double[] powArray(double[] a, double b){
     for(int i= 0; i<a.length; i++){ 
      System.out.print(Math.pow(a[i], 2.0) +" ");
 }     
@@ -30,9 +30,10 @@ public static int [] scores(int a){
  public static int[] histogram(int[] scores, int a){
     
     int [] counter = new int[a];
-    for (int score : scores){
+     for (int score : scores){
       counter[score]++;
     
+       
  }
     System.out.println(Arrays.toString(counter));
      return counter;
@@ -49,7 +50,7 @@ public static void main(String[] args){
  
  powArray(a,b);
  System.out.println();
- histogram(scores(10),10);
+ histogram(scores(100),100);
 
 } 
 }
