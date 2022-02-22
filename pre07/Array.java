@@ -33,7 +33,6 @@ public static int [] scores(int a){
      for (int score : scores){
       counter[score]++;
     
-       
  }
     System.out.println(Arrays.toString(counter));
      return counter;
@@ -44,13 +43,13 @@ public static void main(String[] args){
  
  double[] a= {3.0,4.0,5.0,6.0,7.0};
  double b = 3.0;
- int[] score= new int [5];
+ 
  
 
  
  powArray(a,b);
  System.out.println();
- histogram(scores(100),100);
+ histogram(scores(10),10);
 
 } 
 }
