@@ -49,7 +49,7 @@ public static void main(String[] args){
  
  powArray(a,b);
  System.out.println();
- histogram(scores(10),10);
+ histogram(scores(100),100);
 
 } 
 }

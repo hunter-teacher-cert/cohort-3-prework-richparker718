@@ -5,8 +5,7 @@ import java.util.*;
 public class Sieve {
 
 public static void printPrime(boolean[] a){
-  System.out.println("0 is prime: " + a[0]);
-  for (int i=1; i<a.length; i++){
+  for (int i=0; i<a.length; i++){
     System.out.println(i +" is prime: " + a[i]);
   }
 }
