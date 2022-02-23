@@ -29,7 +29,7 @@ public static int [] scores(int a){
 
  public static int[] histogram(int[] scores, int a){
     
-    int [] counter = new int[a];
+    int [] counter = new int[a]; 
      for (int score : scores){
       counter[score]++;
     
@@ -42,14 +42,10 @@ public static int [] scores(int a){
 public static void main(String[] args){
  
  double[] a= {3.0,4.0,5.0,6.0,7.0};
- double b = 3.0;
- 
- 
-
- 
+ double b = 3.0; 
  powArray(a,b);
  System.out.println();
- histogram(scores(100),100);
+ histogram(scores(20),20);
 
 } 
 }
