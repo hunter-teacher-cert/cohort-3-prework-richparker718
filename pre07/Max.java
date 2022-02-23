@@ -14,12 +14,13 @@ public static int indexOfMax(int[]a) {
         max=i;
       }
     }
+       System.out.println(max);
     return max;
     }
   public static void main(String [] args){
      
-    int[] a= {2,1,255,6,453,100,2201,5,30,65};
-    System.out.println(indexOfMax(a));
+    int[] a= {2,1,2550,6,453,100,2201,5,30,65};
+    indexOfMax(a);
   }
   
 }

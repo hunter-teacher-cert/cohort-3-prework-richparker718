@@ -18,8 +18,6 @@ public static int shoot(int a, int b){
  int c =roll(b)+roll(b);
   return c;
   
- 
- 
 
 }
  //round. It should accept no parameters and it should return something to indicate if the shooter of the round wins or loses.
