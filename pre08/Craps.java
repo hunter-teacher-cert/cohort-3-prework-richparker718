@@ -9,16 +9,15 @@ public static int roll(int a){
 
 Random random = new Random();
 int n= random.nextInt(a)+1;
-return n;
+ return n;
 
 }
 //shoot which accepts two parameters - a number of dice and the maximum value for those dice and returns the result of rolling those dice.
 public static int shoot(int a, int b){
- 
+
  int c =roll(b)+roll(b);
- int result = c;
-  System.out.println(c);
   return c;
+  
  
  
 
@@ -36,11 +35,15 @@ public static int shoot(int a, int b){
 //the shooter continues to shoot (roll) until he either rolls the Point again at which point he wins or he rolls a 7 at which point he loses.
 
  public static void round() {
-  
 
-     
+   int i =1;
    int a = shoot(2,6);
-   
+   System.out.println("roll " + i +": " +a);
+
+   if(!(a==2||a==3||a==12||a==7||a==11)){
+       System.out.println("Your point is: " +a );
+   }
+  
    if (a==2||a==3||a==12){
      System.out.println("Craps you lose!");
      
@@ -49,9 +52,12 @@ public static int shoot(int a, int b){
      System.out.println("Natural you win!");
      
    }else{
-     
+
      int point =a;
      int b=shoot(2,6);
+     i++;
+     System.out.println("roll " + i +": " +b);
+     
      boolean end = false;
      
       while(end==false){
@@ -63,20 +69,23 @@ public static int shoot(int a, int b){
       end = true;
      } else{
        b = shoot(2,6);
+       i++;
+       System.out.println("roll " + i +": " +b);
+        
      }
+      
    }
      }
-   }
+      }
    
 public static void main(String[] args){
 //The main program should take a parameter from the command line, play that many rounds and as it plays indicate each time the shooter wins or loses. The program should also print out the status of the rounds they occur.
-  
+
   for (int i=1; i<= Integer.parseInt(args[0]); i++){
-    System.out.println("Round: " +i);
-    round();
-    System.out.println();
+    System.out.println("Round " +i);
+     round();
+       System.out.println();
 
-    }
 }
-
+  }
 }
