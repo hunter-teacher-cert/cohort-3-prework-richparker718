@@ -35,7 +35,6 @@ for (int k= 2; k<n+1; k++){
  
 public static void main(String[] args){
 sieve(20);
-
 }
 
 
