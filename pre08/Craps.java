@@ -3,7 +3,6 @@ import java.util.*;
 
 public class Craps{
 
-
 public static int roll(int a){
 
 Random random = new Random();
