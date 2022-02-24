@@ -72,7 +72,8 @@ public class Loops{
     }
   
   public static void check(double x){
-    System.out.println(x + "\t" + "\t" + myexp(x,4) + "\t"  + Math.exp(x));
+    System.out.println(x + "\t" + "\t" + myexp(x,4) + "\t"  + 
+     Math.exp((x));
 
   }
 
@@ -92,7 +93,8 @@ public class Loops{
          System.out.println(myexp2(n,2));
           n = n * 10;
       }
-     // the values are less accurate
+     // the values from negative arguments are less accurate than 
+     //  positive arguments
 
       System.out.println();
         
