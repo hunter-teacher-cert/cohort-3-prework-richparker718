@@ -3,7 +3,7 @@ import java.util.*;
 
 
 public class Array{
-
+  
 
 public static double[] powArray(double[] a, double b){
     for(int i= 0; i<a.length; i++){ 
@@ -30,6 +30,7 @@ public static int [] scores(int a){
  public static int[] histogram(int[] scores, int a){
     
     int [] counter = new int[a]; 
+  
      for (int score : scores){
       counter[score]++;
     

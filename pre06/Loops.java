@@ -73,7 +73,7 @@ public class Loops{
   
   public static void check(double x){
     System.out.println(x + "\t" + "\t" + myexp(x,4) + "\t"  + 
-     Math.exp((x));
+     Math.exp(x));
 
   }
 

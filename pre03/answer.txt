@@ -1,10 +1,9 @@
-*main prints “No, I”  followed by a space; zoop is then called invoking baffle which prints “wug” ; ping is then invoked which prints “.” 
+main prints “No, I”  followed by a space; zoop is then called invoking baffle which prints “wug” ; ping is then invoked which prints “.” 
 
-*Because ping uses println, on a new line zoop then prints “You wugga” 
-followed by a space and invokes baffle again outputting “wug” and then calls ping that outputs  “.” 
+Because ping uses println, on a new line zoop then prints “You wugga” followed by a space and invokes baffle again outputting “wug” and then calls ping that outputs  “.” 
 
 
-*On a new line, main then outputs “I” followed by a space and baffle is invoked again printing “wug” followed by  “.” 
+On a new line, main then outputs “I” followed by a space and baffle is invoked again printing “wug” followed by  “.” 
 
 Output:
 No, I wug. 

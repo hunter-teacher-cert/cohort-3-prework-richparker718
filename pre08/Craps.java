@@ -1,21 +1,53 @@
 import java.io.*;
 import java.util.*;
+import java.util.Scanner;
 
 public class Craps{
+
+ public static void gameInstructions(){
+   newLine();
+System.out.println("GAME INSTRUCTIONS:");
+  
+System.out.println("A round is played with the shooter rolling the dice.");
+   newLine();
+
+System.out.println("If a 2,3, or 12 is rolled, that’s Craps and they lose.");
+   newLine();
+   
+System.out.println("If a 7 or 11 is rolled, that’s a Natural and they win.");
+   newLine();
+   
+System.out.println("Otherwise, the value rolled is now called the Point.");
+newLine();
+   
+System.out.println("The shooter continues to shoot(roll) until they either roll the Point again indicating a win or they roll a 7 indicating a loss.");
+newLine();
+newLine();
+ }
+  
+
+
+public static void newLine(){
+    System.out.println();
+  }
 
 public static int roll(int a){
 
 Random random = new Random();
 int n= random.nextInt(a)+1;
  return n;
-
 }
+  
+  public static void pauseToContinue(){
+  Scanner in = new Scanner(System.in);
+  System.out.println("click return to roll dice");
+  in.nextLine();
+  }
 
 public static int shoot(int a, int b){
-
- int c =roll(b)+roll(b);
+  pauseToContinue();
+  int c = roll(b)+roll(b);
   return c;
-  
 }
 
  public static void round() {
@@ -25,7 +57,7 @@ public static int shoot(int a, int b){
    System.out.println("roll " + i +": " +a);
 
    if(!(a==2||a==3||a==12||a==7||a==11)){
-       System.out.println("Your point is: " +a );
+       System.out.println("Your Point is: " +a );
    }
   
    if (a==2||a==3||a==12){
@@ -65,11 +97,11 @@ public static int shoot(int a, int b){
       }
    
 public static void main(String[] args){
-
+  gameInstructions();
   for (int i=1; i<= Integer.parseInt(args[0]); i++){
-    System.out.println("Round " +i);
-     round();
-       System.out.println();
+    System.out.println("ROUND " +i);
+    round();
+    newLine();
 
 }
   }
