@@ -61,11 +61,11 @@ public static int shoot(int a, int b){
    }
   
    if (a==2||a==3||a==12){
-     System.out.println("Craps you lose!");
+     System.out.println("CRAPS, YOU LOSE!");
      
    } else if(a==7||a==11){
      
-     System.out.println("Natural you win!");
+     System.out.println("NATURAL, YOU WIN!");
      
    }else{
 
@@ -79,11 +79,11 @@ public static int shoot(int a, int b){
       while(end==false){
         
       if(point==b){
-       System.out.println("You win!");
+       System.out.println("YOU WIN!");
        end = true;
         
      }else if (b==7){
-       System.out.println("You lose!");
+       System.out.println("YOU LOSE!");
        end = true;
         
      } else{
@@ -101,6 +101,8 @@ public static void main(String[] args){
   for (int i=1; i<= Integer.parseInt(args[0]); i++){
     System.out.println("ROUND " +i);
     round();
+    newLine();
+    newLine();
     newLine();
 
 }
