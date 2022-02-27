@@ -43,10 +43,6 @@ public static int shoot(int a, int b){
    int i =1;
    int a = shoot(2,6);
    System.out.println("roll " + i +": " +a);
-
-   if(!(a==2||a==3||a==12||a==7||a==11)){
-     System.out.println("Your Point is: " +a );
-   }
   
    if (a==2||a==3||a==12){
      System.out.println("CRAPS, YOU LOSE!");
@@ -55,6 +51,7 @@ public static int shoot(int a, int b){
      System.out.println("NATURAL, YOU WIN!");
      
    }else{
+     System.out.println("Your Point is: " +a );
      int point =a;
      int b=shoot(2,6);
      i++;
@@ -83,8 +80,8 @@ public static int shoot(int a, int b){
       }
    
 public static void main(String[] args){
-  gameInstructions();
-  for (int i=1; i<= Integer.parseInt(args[0]); i++){
+    gameInstructions();
+    for (int i=1; i<= Integer.parseInt(args[0]); i++){
     System.out.println("ROUND " +i); System.out.println("press return to roll dice");
     round();
     newLine();
