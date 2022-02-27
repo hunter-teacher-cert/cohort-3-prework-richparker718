@@ -8,19 +8,19 @@ public class Craps{
    newLine();
 System.out.println("GAME INSTRUCTIONS:");
   
-System.out.println("A round is played with the shooter rolling the dice.");
+System.out.println("A round is played by rolling the dice.");
    newLine();
 
-System.out.println("If a 2,3, or 12 is rolled, that’s Craps and they lose.");
+System.out.println("If a 2,3, or 12 is rolled, that’s Craps and you lose.");
    newLine();
    
-System.out.println("If a 7 or 11 is rolled, that’s a Natural and they win.");
+System.out.println("If a 7 or 11 is rolled, that’s a Natural and you win.");
    newLine();
    
-System.out.println("Otherwise, the value rolled is now called the Point.");
+System.out.println("Otherwise, the value rolled is the Point.");
 newLine();
    
-System.out.println("The shooter continues to shoot(roll) until they either roll the Point again indicating a win or they roll a 7 indicating a loss.");
+System.out.println("Continue to shoot(roll) until you either roll the Point again (win) or roll a 7 (lose).");
 newLine();
 newLine();
  }
@@ -40,7 +40,6 @@ int n= random.nextInt(a)+1;
   
   public static void pauseToContinue(){
   Scanner in = new Scanner(System.in);
-  System.out.println("click return to roll dice");
   in.nextLine();
   }
 
@@ -99,7 +98,7 @@ public static int shoot(int a, int b){
 public static void main(String[] args){
   gameInstructions();
   for (int i=1; i<= Integer.parseInt(args[0]); i++){
-    System.out.println("ROUND " +i);
+    System.out.println("ROUND " +i); System.out.println("click return to roll dice");
     round();
     newLine();
     newLine();
