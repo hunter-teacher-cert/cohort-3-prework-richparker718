@@ -13,7 +13,8 @@ public class Time {
   System.out.print("Seconds remaining in the day:  ");
   System.out.println(dayTotalSec - currTime);
   double percentage =  (58830.0 / 86400.0) * 100; 
-  System.out.printf("Percentage of the day that has passed:  " + "%.2f",percentage); System.out.println("%");
+  System.out.printf("Percentage of the day that has passed:  " + "%.2f",percentage); 
+  System.out.println("%");
   hour = 17;
   minute = 25;
   second = 20;
@@ -23,8 +24,8 @@ public class Time {
   hour = hour - sHour;
   minute = minute - sMin;
   second = second + sSec;
-  System.out.print("Time elapsed since working on this program:  ")
-  ;System.out.print(hour);
+  System.out.print("Time elapsed since working on this program:  ");
+  System.out.print(hour);
   System.out.print(" hour ");
   System.out.print(minute);
   System.out.print(" minutes ");

@@ -8,17 +8,17 @@ public class Craps{
    newLine();
 System.out.println("GAME INSTRUCTIONS:");
   
-System.out.println("A round is played by rolling the dice.");
-   newLine();
+System.out.print("A round is played by rolling the dice. ");
+   
 
-System.out.println("If a 2,3, or 12 is rolled, that’s Craps and you lose.");
-   newLine();
+System.out.print("If a 2,3, or 12 is rolled that’s Craps and you lose. ");
+
    
-System.out.println("If a 7 or 11 is rolled, that’s a Natural and you win.");
-   newLine();
+System.out.print("If a 7 or 11 is rolled it's Natural and you win, ");
    
-System.out.println("Otherwise, the value rolled is the Point.");
-newLine();
+   
+System.out.print("otherwise the value rolled is the Point. ");
+
    
 System.out.println("Continue to shoot(roll) until you either roll the Point again (win) or roll a 7 (lose).");
 newLine();
