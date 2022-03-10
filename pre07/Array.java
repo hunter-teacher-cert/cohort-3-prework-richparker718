@@ -46,7 +46,7 @@ public static void main(String[] args){
  double b = 3.0; 
  powArray(a,b);
  System.out.println();
- histogram(scores(10),10);
+ histogram(scores(100),100);
 
 } 
 }
